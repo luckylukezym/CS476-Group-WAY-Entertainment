@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../CSS/Ult_TTT.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/chatroom.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/large-devices.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Ult_TTT.js"></script>
+    <script type="text/javascript" src="../chatroom.js"></script>
+  </head>
+
+  <div id="container">
+      <div class="info">
+        <h2>The Rules</h2>
+        <p>Each small 3 × 3 tic-tac-toe board is referred to as a local board, and the larger 3 × 3 board is referred to as the global board.</p>
+
+        <p>The game starts with X playing wherever they want in any of the 81 empty spots. This move "sends" their opponent to its relative location. For example, if X played in the top right square of their local board, then O needs to play next in the local board at the top right of the global board. O can then play in any one of the nine available spots in that local board, each move sending X to a different local board.</p>
+
+        <p>If a move is played so that it is to win a local board by the rules of normal tic-tac-toe, then the entire local board is marked as a victory for the player in the global board.</p>
+
+        <p>Once a local board is won by a player or it is filled completely, no more moves may be played in that board. If a player is sent to such a board, then that player may play in any other board.</p>
+
+        <p>Game play ends when either a player wins the global board or there are no legal moves remaining, in which case the game is a draw.</p>
+        <button class="info-close">Close</button>
+      </div>
+      <div id="game">
+        <div class="game-overlay"></div>
+        <div id="winner">
+          <h1></h1>
+        </div>
+      </div>
+
+      <div id="options">
+        <button class="btn-info">Instructions</button>
+        <button class="player1">Blue starts</button>
+        <button class="player2">Red starts</button>
+      </div>
+    </div>
+  <body>
+    <div class="back"><input type="button" value="Out"  id="back"></div>
+ 
+    <div class="talk" >
+        <div class="title" id="title">
+        </div>
+        
+
+        <div class="talk_con" id="talk_con">
+            <div class="talk_show" id="words" style="overflow: scroll;">
+                <div class="atalk" ><span class="asay" id="talk1" id="asay">Hello everyone</span></div>
+                <div class="atalk" ><span class="asay" id="talk2" id="asay" >HI</span></div>
+                <div class="atalk" ><span class="asay" id="talk3" id="asay">This is chatroom! Welcome</span></div>
+            </div>
+            
+            <div class="talk_input">
+                <input type="text" class="talk_word" id="talkwords">
+                <input type="button" value="Send" class="talk_sub" id="talksub">
+                <div id="image_icon">
+
+                </div>
+           
+                    <select class="talk_sub" id="talksub_color" style="width: 100px;">
+                    </select>
+
+                
+                <select class="talk_sub" id="talksub_bgcolor" style="width: 100px;">
+                </select>
+
+            </div>
+        </div>
+        <div class="user_list">
+            <div class="user_list_title">Players</div>
+            <div class="user">
+                <ul>
+                    <li id="user">Player 1</li>
+                    <li id="user">Player 2</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
