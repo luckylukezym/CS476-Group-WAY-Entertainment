@@ -10,7 +10,8 @@
         <link rel="stylesheet" type="text/css" media="screen and (max-width: 580px)" href="CSS/small-devices.css" />
         <link rel="stylesheet" type="text/css" media="screen and (min-width: 581px)" href="CSS/large-devices.css" />    
         <link rel="stylesheet" type="text/css" href="CSS/mystyle.css" />
-
+        <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+        <script src="validation.js" defer></script>
     </head>
 
     <body>
@@ -23,10 +24,10 @@
         <nav>
             <ul>
               <li><a href="self-intro.html" class="niceButton">About US</a></li>
-              <li><a href="index.html" class="niceButton">Back to index</a></li>
+              <li><a href="index.php" class="niceButton">Back to index</a></li>
               <li><a href="signup.html" class="niceButton">sign-up page</a></li>
               <li><a href="login.html" class="niceButton">re-login page</a></li>
-              <li><a href="manage-friend.html" class="niceButton">Manage your Friend</a></li>
+              <li><a href="manage-friend.php" class="niceButton">Manage your Friend</a></li>
               <li><a href="gamelist.html" class="niceButton">Find Games</a></li>
             </ul>
         </nav>
@@ -36,14 +37,14 @@
             <h3>
                 Sign Up here
             </h3>
-            <form>
-                <p>Email:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="text" name="Email"/><br/><br/>
-                User Name:&emsp;&emsp;&emsp;<input type="text" name="User Name"/><br/><br/>
-                Password:&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="password" name="pwd"/><br/><br/>
-                Confirm Password:<input type="password" name="cfpwd"/><br/><br/><br/>
-                <input type="submit" value="SignUp"/></p>
+            <form action="signup.php" method="post" id="signup" novalidate>
+                <p>User Name:&emsp;&emsp;&emsp;<input type="text" id="name" name="name"/><br/><br/>
+                Email:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="text" id="email" name="email"/><br/><br/>
+                Password:&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="password" id="password" name="password"/><br/><br/>
+                Confirm Password:<input type="password" id="cfpassword" name="cfpassword"/><br/><br/><br/>
+                <button>SignUP</button></p>
             </form>
         </div>
-        <p><a href="index.html" class="niceButton">Back to my home page</a>></p>
+        <p><a href="index.php" class="niceButton">Back to my home page</a>></p>
     </body>
 </html>
