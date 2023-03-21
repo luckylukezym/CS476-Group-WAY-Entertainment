@@ -27,7 +27,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
-    $mysqli = require __DIR__ . "/database.php";
+   $host = "sql9.freesqldatabase.com";
+    $dbname = "sql9607367";
+    $username = "sql9607367";
+    $password = "mQQXyFvQAn";
+
+    $mysqli = new mysqli(hostname: $host,
+                         username: $username,
+                         password: $password,
+                         database: $dbname);
+
+    if ($mysqli->connect_errno) {
+        die("Connection error: " . $mysqli->connect_error);
+    }
 
     $sql = "INSERT INTO user (name, email, password_hash)
             VALUES (?, ?, ?)";
