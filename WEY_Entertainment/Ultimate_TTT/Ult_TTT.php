@@ -1,4 +1,3 @@
-/* https://code.tutsplus.com/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931 */
 <?php
 
 session_start();
@@ -55,6 +54,7 @@ function loginForm(){
     <script type="text/javascript" src="Ult_TTT.js"></script>
   </head>
     <body>
+    <a href="../self-intro.html" class="niceButton">About US</a>
     <?php
     if(!isset($_SESSION['name'])){
         loginForm();

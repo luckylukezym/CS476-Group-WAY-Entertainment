@@ -89,7 +89,7 @@ function loginForm(){
     else {
 
     ?>
-
+    <a href="self-intro.html" class="niceButton">Quit</a>
         <div id="wrapper">
 
             <div id="menu">
