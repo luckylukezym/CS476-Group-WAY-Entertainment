@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+    <head>
+        <title>
+            LoginPage
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 580px)" href="CSS/small-devices.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 581px)" href="CSS/large-devices.css" />    
+        <link rel="stylesheet" type="text/css" href="CSS/mystyle.css" />
+
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <img style="width:1400PX;height:250px;" src="file/page2.jpg" alt="first page" /><br/>Login Page
+            </h1>
+        </header>
+        <hr/>
+        <nav>
+            <ul>
+              <li><a href="self-intro.html" class="niceButton">About US</a></li>
+              <li><a href="index.php" class="niceButton">Back to index</a></li>
+              <li><a href="signup.html" class="niceButton">sign-up page</a></li>
+              <li><a href="login.html" class="niceButton">re-login page</a></li>
+              <li><a href="manage-friend.php" class="niceButton">Manage your Friend</a></li>
+              <li><a href="gamelist.html" class="niceButton">Find Games</a></li>
+            </ul>
+        </nav>
+        <hr/>
+
+        <div style="text-align:center;">
+            <h3>
+                Login here
+            </h3>
+            <form action="login.php" method="post" id="login" novalidate>
+                <p>User Name:&emsp;&emsp;&emsp;<input type="text" name="email"/><br/><br/>
+                Password:&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="password" name="password"/><br/><br/><br/>
+                <span id="error"></span>
+                <input type="submit" value="Login"/></p>
+            </form>
+        </div>
+        <p><a href="index.php" class="niceButton">Back to my home page</a>></p>
+        <footer>&#169;2023/03/20 CS476. WEY Group All rights reserved.</footer>
+    </body>
+
+</html>
